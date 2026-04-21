@@ -4,182 +4,119 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MAE 3270, Torque Wrench Design Project</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="/fa25-portfolio-mjh449-collab/assets/css/main.css">
+
+  <!-- FIXED CSS PATH -->
+  <link rel="stylesheet" href="../../assets/css/main.css">
 </head>
 
 <body>
 
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark text-white";>
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/fa25-portfolio-mjh449-collab/">Matthew Heering</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
-          <span class="navbar-toggler-icon"></span>
-        </button>  
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link " href="/fa25-portfolio-mjh449-collab/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="/fa25-portfolio-mjh449-collab/projects/">Projects</a>
-            </li> 
-            <li class="nav-item">
-              <a class="nav-link " href="/fa25-portfolio-mjh449-collab/cv/">CV</a>
-            </li>
-          </ul>
-        </div>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
+      <!-- FIXED NAV -->
+      <a class="navbar-brand" href="../../index.html">Matthew Heering</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
+        <span class="navbar-toggler-icon"></span>
+      </button>  
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Projects</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="../../Resume/resume.html">CV</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-  </header>
-  
-  
-  <main class="container">
-    <h1>MAE 3270, Torque Wrench Design Project</h1>
+    </div>
+  </nav>
+</header>
+
+
+<main class="container py-5">
+
+<h1>MAE 3270, Torque Wrench Design Project</h1>
 
 <p>
+  <!-- FIXED IMAGE -->
   <img 
-    src="/fa25-portfolio-mjh449-collab/assets/images/3270-img.png" 
-    alt="" 
-    class="project-image"
+    src="/images/3270-img.png" 
     style="width: 100%; max-height: 250px; object-fit: cover; border-radius: 12px;"
   />
 </p>
 
-<style>
-.page-header {
-  padding-top: 60px !important;
-}
+<p>
+For my Mechanics of Materials class, we designed, CADed, and analyzed a torque wrench...
+</p>
 
-.project-header {
-  padding-top: 60px !important;
-}
-</style>
+<!-- FIXED PDF -->
+<p>
+  <a href="/assets/MAE3270 Final Project.pdf" target="_blank">
+    View full PDF report
+  </a>
+</p>
 
-<p>For my Mechanics of Materials class, we were asked to design, CAD, and analyze a torque wrench. Our design is based on safety requirements and threshholds defined in the project prompt, and we used MATLAB to calculate the dimensions needed to fulfill those requirements based on our chosen material properties. This project was in collaboration with Garrett Smith.</p>
+<h4>Results</h4>
 
-<p><a href="/fa25-portfolio-mjh449-collab/assets/MAE3270%20Final%20Project.pdf">PDF form of the report</a> in PDF format.</p>
+<p><strong>1. CAD Model</strong></p>
+<img src="/images/3270 images/CAD drawing.png" style="width:100%; margin-bottom:20px;">
 
-<p>Design Project</p>
+<p><strong>2. Material Properties</strong></p>
+<p>300M is a high-strength alloy used in aerospace...</p>
+<img src="/images/3270 images/3270.21.png" style="width:100%; margin-bottom:20px;">
+<img src="/images/3270 images/3270.22.png" style="width:100%; margin-bottom:20px;">
 
-<p>5.2.1 Results</p>
+<p><strong>3. FEM Setup</strong></p>
+<img src="/images/3270 images/3270.3.png" style="width:100%; margin-bottom:20px;">
 
-<p><strong>1. Image of CAD model</strong></p>
+<p><strong>4. Strain Contours</strong></p>
+<img src="/images/3270 images/3270.41.png" style="width:100%; margin-bottom:20px;">
+<img src="/images/3270 images/3270.42.png" style="width:100%; margin-bottom:20px;">
 
-<div style="clear: both;"></div>
+<p><strong>5. Stress Contours</strong></p>
+<img src="/images/3270 images/3270.51.png" style="width:100%; margin-bottom:20px;">
+<img src="/images/3270 images/3270.52.png" style="width:100%; margin-bottom:20px;">
 
-<p><img src="/fa25-portfolio-mjh449-collab/assets/images/3270%20images/CAD%20drawing.png" alt="Photo of CAD model" class="inline-image-l" /></p>
+<p><strong>6. Results</strong></p>
+<p>Max stress: 63935 psi</p>
+<img src="/images/3270 images/3270.61.png" style="width:100%; margin-bottom:20px;">
 
-<div style="clear: both;"></div>
+<p>Deflection: 0.20277 in</p>
+<img src="/images/3270 images/3270.62.png" style="width:100%; margin-bottom:20px;">
 
-<p><strong>2. A description of our materials’ relevant mechanical properties.</strong></p>
+<p>Strain: 1161 µε</p>
+<img src="/images/3270 images/3270.63.png" style="width:100%; margin-bottom:20px;">
 
-<p>Typically used in the aerospace, defense, and high performance automotive industries, 300M is a highly resilient material with exceptionally high yield and fatigue strengths. A material choice of 300M for our wrench allows us to make the thickness dimensions relatively slim, allowing the torque wrench to be used on bolts in tight spaces. However, the dimensions do not compromise performance with our geometry producing a normal stress of about 64ksi, which is only about 28% of the yield limit of 230 ksi.</p>
+<p><strong>7. Sensitivity</strong></p>
+<p>1.16 mV/V at 600 in-lbf</p>
 
-<div style="clear: both;"></div>
+<p><strong>8. Strain Gauge</strong></p>
+<img src="/images/3270 images/3270.8.png" style="width:100%; margin-bottom:20px;">
 
-<p><img src="/fa25-portfolio-mjh449-collab/assets/images/3270%20images/3270.21.png" alt="Photo of CAD model" class="inline-image-l" /></p>
+<p><strong>Technologies Used</strong>: Ansys, Fusion 360, MATLAB</p>
 
-<div style="clear: both;"></div>
-
-<div style="clear: both;"></div>
-
-<p><img src="/fa25-portfolio-mjh449-collab/assets/images/3270%20images/3270.22.png" alt="Photo of CAD model" class="inline-image-l" /></p>
-
-<div style="clear: both;"></div>
-
-<p><strong>3. Diagram communicating how loads and boundary conditions were applied to theFEM model.</strong></p>
-<div style="clear: both;"></div>
-
-<p><img src="/fa25-portfolio-mjh449-collab/assets/images/3270%20images/3270.3.png" alt="Photo of CAD model" class="inline-image-l" /></p>
-
-<div style="clear: both;"></div>
-
-<p><strong>4. Normal strain contours (in the strain gauge direction) from FEM</strong></p>
-
-<div style="clear: both;"></div>
-
-<p><img src="/fa25-portfolio-mjh449-collab/assets/images/3270%20images/3270.41.png" alt="Photo of CAD model" class="inline-image-l" /></p>
-
-<div style="clear: both;"></div>
-
-<div style="clear: both;"></div>
-
-<p><img src="/fa25-portfolio-mjh449-collab/assets/images/3270%20images/3270.42.png" alt="Photo of CAD model" class="inline-image-l" /></p>
-
-<div style="clear: both;"></div>
-
-<p><strong>5. Contour plot of maximum principal stress from FEM</strong></p>
-
-<div style="clear: both;"></div>
-
-<p><img src="/fa25-portfolio-mjh449-collab/assets/images/3270%20images/3270.51.png" alt="Photo of CAD model" class="inline-image-l" /></p>
-
-<div style="clear: both;"></div>
-<div style="clear: both;"></div>
-
-<p><img src="/fa25-portfolio-mjh449-collab/assets/images/3270%20images/3270.52.png" alt="Photo of CAD model" class="inline-image-l" /></p>
-
-<div style="clear: both;"></div>
-
-<p><strong>6. Summary results from FEM calculation showing maximum normal stress (anywhere), load point deflection, strains at the strain gauge locations</strong></p>
-
-<p>maximum normal stress (anywhere): 63935 psi</p>
-<div style="clear: both;"></div>
-
-<p><img src="/fa25-portfolio-mjh449-collab/assets/images/3270%20images/3270.61.png" alt="Photo of CAD model" class="inline-image-l" /></p>
-
-<div style="clear: both;"></div>
-
-<p>load point deflection: 0.20277in</p>
-<div style="clear: both;"></div>
-
-<p><img src="/fa25-portfolio-mjh449-collab/assets/images/3270%20images/3270.62.png" alt="Photo of CAD model" class="inline-image-l" /></p>
-
-<div style="clear: both;"></div>
-
-<p>strains at the strain gauge locations:1161 (µε)</p>
-<div style="clear: both;"></div>
-
-<p><img src="/fa25-portfolio-mjh449-collab/assets/images/3270%20images/3270.63.png" alt="Photo of CAD model" class="inline-image-l" /></p>
-
-<div style="clear: both;"></div>
-
-<p><strong>7. Torque wrench sensitivity in mV/V using strains from the FEM analysis</strong></p>
-
-<p>1.16 mV/V at 600 in-lbf using half bridge</p>
-
-<p><strong>8. Strain gauge selected</strong></p>
-
-<p>VISHAY- C2A series strain gages- 062LW</p>
-
-<p>C2A-06-062LW-350</p>
-<div style="clear: both;"></div>
-
-<p><img src="/fa25-portfolio-mjh449-collab/assets/images/3270%20images/3270.8.png" alt="Photo of CAD model" class="inline-image-l" /></p>
-
-<div style="clear: both;"></div>
-
-<p>This strain gauge fits comfortably on the dimensions of our CAD and has a fatigue life of 105 cycles at ±1700 microstrain and 106 cycles at ±1500 microstrain. Our FEM calculated a strain of 1161microstrain at the strain gauge, which would insinuate a fatigue life larger than the provided range, making it more than sufficient.</p>
-
-
-
-<p><strong>Technologies Used</strong>: Ansys, Autodesk Fusion, MATLAB</p>
-
-<a href=/fa25-portfolio-mjh449-collab/projects/ class="back-arrow">
-    <i class="bi bi-arrow-left-circle-fill"></i> Back to Projects
+<!-- FIXED BACK -->
+<a href="../index.html">
+  ← Back to Projects
 </a>
 
-  </main>
+</main>
 
-  <footer class="footer navbar-dark text-white text-center";>
-    <div class="container">
-      &copy; 2025 Matthew Heering. All rights not reserved.
-    </div>
-  </footer>
+<footer class="bg-dark text-white text-center py-3">
+  &copy; 2025 Matthew Heering
+</footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
