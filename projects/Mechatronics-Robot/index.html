@@ -3,82 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mechatornics Robot - Felix</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+  <title>Mechatronics Robot Felix | Matthew Heering</title>
   <link rel="stylesheet" href="../../assets/css/main.css">
-  
-  <style>
-    main {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    .project-image {
-      width: 100%;
-      max-width: 500px;
-      margin: 30px auto;
-      display: block;
-      border: 3px solid #ddd;
-      border-radius: 12px;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-      object-fit: cover;
-    }
-  </style>
 </head>
-
 <body>
-
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark text-white";>
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../../index.html">Matthew Heering</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
-          <span class="navbar-toggler-icon"></span>
-        </button>  
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="../../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Projects</a>
-            </li> 
-            <li class="nav-item">
-              <a class="nav-link" href="../../Resume/resume.html">CV</a>
-            </li>
-          </ul>
-        </div>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a class="brand" href="../../index.html">Matthew Heering</a>
+      <div class="nav-links">
+        <a href="../../index.html">Home</a>
+        <a href="../../about.html">About</a>
+        <a class="active" href="../index.html">Projects</a>
+        <a href="../../Resume/resume.html">Resume</a>
+        <a href="../../interests.html">Interests</a>
       </div>
-    </nav>
-  </header>
-  
-  
-  <main class="container">
-    <h1>Mechatornics Robot - Felix</h1>
+    </div>
+  </nav>
 
-<p><img src="../../images/Felix.jpg" alt="Mechatronics Robot Felix" class="project-image" /></p>
-
-<p>In my Mechatronics class we designed, built, and programmed robots to collect blocks. On the final day of class we competed in a round robin style tournament and our robot went 5-2 in the total competition, making it to the quarter finals.</p>
-
-<h2>Full Final Project Report</h2>
-
-<iframe src="Mechatronics.pdf" width="100%" height="600px" style="border: none;"></iframe>
-
-<p><strong>Technologies Used</strong>: Arduino, Fusion 360</p>
-
-<a href="../index.html" class="back-arrow">
-    <i class="bi bi-arrow-left-circle-fill"></i> Back to Projects
-</a>
-
+  <main class="page-shell">
+    <article class="prose">
+      <p class="eyebrow">Mechatronics</p>
+      <h1>Mechatronics Robot Felix</h1>
+      <img class="project-hero-image" src="../../images/Felix.jpg" alt="Mechatronics robot Felix">
+      <p>
+        In my Mechatronics class, we designed, built, and programmed robots to collect blocks.
+        On the final day of class, we competed in a round-robin tournament. Our robot went 5-2
+        overall and made it to the quarterfinals.
+      </p>
+      <p><strong>Technologies used:</strong> Arduino, Fusion 360</p>
+      <div class="action-row">
+        <a class="button primary" href="Mechatronics.pdf" target="_blank" rel="noreferrer">View Report</a>
+        <a class="button" href="../index.html">Back to Projects</a>
+      </div>
+      <iframe class="pdf-frame" src="Mechatronics.pdf" title="Mechatronics robot final report"></iframe>
+    </article>
   </main>
 
-  <footer class="footer navbar-dark text-white text-center";>
-    <div class="container">
-      &copy; 2025 Matthew Heering. All rights not reserved.
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <footer class="site-footer">&copy; 2026 Matthew Heering</footer>
 </body>
 </html>

@@ -3,82 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Interests</title>
-  <style>
-    body {
-      font-family: "Times New Roman", Times, serif;
-      background-color: #fff;
-      color: #111;
-      margin: 0;
-      padding: 20px;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    h1 {
-      color: #333;
-      margin-bottom: 30px;
-    }
-    h2 {
-      color: #555;
-      margin-top: 25px;
-    }
-    p {
-      margin-bottom: 15px;
-    }
-    a {
-      color: #0077cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .back-link {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 10px 20px;
-      background-color: #f0f0f0;
-      border-radius: 5px;
-      text-decoration: none;
-      color: #333;
-    }
-    .back-link:hover {
-      background-color: #e0e0e0;
-    }
-  </style>
+  <title>Interests | Matthew Heering</title>
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-  <div class="container">
-    <h1>My Interests</h1>
-    
-    <h2>Mechanical Engineering</h2>
-    <p>
-      As a mechanical engineering student at Cornell University, I'm passionate about designing and building systems that solve real-world problems. I'm particularly interested in robotics, fluid mechanics, and mechanical design.
-    </p>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">Matthew Heering</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects/index.html">Projects</a>
+        <a href="Resume/resume.html">Resume</a>
+        <a class="active" href="interests.html">Interests</a>
+      </div>
+    </div>
+  </nav>
 
-    <h2>Robotics</h2>
-    <p>
-      I enjoy working on robotics projects that combine mechanical design with programming. Whether it's building a Mechatronics robot or analyzing the dynamics of a Sphero, I find satisfaction in bringing machines to life.
-    </p>
+  <main class="page-shell">
+    <section class="section-header">
+      <p class="eyebrow">Interests</p>
+      <h1>What I keep coming back to.</h1>
+      <p class="lead">
+        I like engineering problems where physical intuition, modeling, and hands-on iteration
+        all have a role to play.
+      </p>
+    </section>
 
-    <h2>Fluid Mechanics</h2>
-    <p>
-      Understanding how fluids behave in mechanical systems fascinates me. From analyzing air compressors to studying fluid flow dynamics, I'm intrigued by the physics that governs fluid systems.
-    </p>
+    <section class="grid">
+      <article class="card">
+        <p class="meta">Mechanical Engineering</p>
+        <h3>Real-world systems</h3>
+        <p>Designing and building systems that solve practical problems with clear constraints.</p>
+      </article>
+      <article class="card">
+        <p class="meta">Robotics</p>
+        <h3>Motion and control</h3>
+        <p>Combining mechanical design, programming, sensors, and testing to make machines work.</p>
+      </article>
+      <article class="card">
+        <p class="meta">Fluid Mechanics</p>
+        <h3>Flow behavior</h3>
+        <p>Understanding how fluids move through mechanical systems, from compressors to flow analysis.</p>
+      </article>
+      <article class="card">
+        <p class="meta">CAD</p>
+        <h3>Design visualization</h3>
+        <p>Using Fusion 360 to model, refine, and communicate mechanical ideas before fabrication.</p>
+      </article>
+      <article class="card">
+        <p class="meta">Problem Solving</p>
+        <h3>Creative analysis</h3>
+        <p>Working through challenging technical questions with experimentation and collaboration.</p>
+      </article>
+      <article class="card">
+        <p class="meta">Learning</p>
+        <h3>Better tools</h3>
+        <p>Continuously expanding my engineering toolkit through new methods, software, and builds.</p>
+      </article>
+    </section>
+  </main>
 
-    <h2>CAD and Design</h2>
-    <p>
-      I'm proficient in Fusion 360 and enjoy the design process from concept to reality. Creating detailed CAD models helps me visualize and refine engineering solutions before building them.
-    </p>
-
-    <h2>Problem-Solving</h2>
-    <p>
-      I'm drawn to challenging engineering problems that require creative thinking and analytical skills. I enjoy collaborating with others, learning new tools, and continuously improving my engineering capabilities.
-    </p>
-
-    <a href="index.html" class="back-link">← Back to Home</a>
-  </div>
+  <footer class="site-footer">&copy; 2026 Matthew Heering</footer>
 </body>
 </html>

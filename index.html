@@ -2,65 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Matthew Heering</title>
-
-  <style>
-    body {
-      margin: 0;
-      padding: 60px 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: "Times New Roman", Times, serif;
-      background-color: #d5f8ff;
-      color: #111;
-      line-height: 1.6;
-      min-height: 100vh;
-    }
-
-    .container {
-      text-align: center;
-    }
-
-    h1 {
-      font-weight: 500;
-      margin-bottom: 15px;
-    }
-
-    .headshot {
-      width: 140px;
-      height: 140px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 20px;
-    }
-
-    a {
-      display: block;
-      margin: 8px 0;
-      text-decoration: none;
-      color: #333;
-      font-size: 18px;
-      transition: 0.2s;
-    }
-
-    a:hover {
-      color: #0077cc;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matthew Heering | Mechanical Engineering Portfolio</title>
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
-
 <body>
-  <div class="container">
-    <h1>Matthew Heering</h1>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">Matthew Heering</a>
+      <div class="nav-links">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects/index.html">Projects</a>
+        <a href="Resume/resume.html">Resume</a>
+        <a href="interests.html">Interests</a>
+      </div>
+    </div>
+  </nav>
 
-    
-    <img src="coding.jpeg" alt="Matthew Heering" class="headshot">
+  <main class="page-shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Mechanical engineering at Cornell University</p>
+        <h1>Designing practical mechanical systems with curiosity and care.</h1>
+        <p class="lead">
+          I am a mechanical engineering student focused on CAD, robotics, system dynamics,
+          fluid mechanics, and turning early ideas into built, tested work.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="projects/index.html">View Projects</a>
+          <a class="button" href="Resume/resume.html">Open Resume</a>
+        </div>
+      </div>
+      <div class="portrait-wrap">
+        <img class="portrait" src="images/profile-pic.jpg" alt="Matthew Heering">
+      </div>
+    </section>
 
-    <a href="about.html">About Me</a>
-    <a href="projects/index.html">Projects</a>
-    <a href="Resume/resume.html">Resume</a>
-    <a href="interests.html">Interests</a>
-  </div>
+    <section class="section" aria-labelledby="focus-heading">
+      <div class="section-header">
+        <p class="eyebrow">Focus areas</p>
+        <h2 id="focus-heading">Engineering work that connects analysis, design, and build.</h2>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <p class="meta">Design</p>
+          <h3>CAD and product thinking</h3>
+          <p>Fusion 360 modeling, mechanical layouts, and design decisions grounded in function.</p>
+        </article>
+        <article class="card">
+          <p class="meta">Robotics</p>
+          <h3>Mechatronics systems</h3>
+          <p>Robots, controls, sensors, and hands-on debugging from concept through competition.</p>
+        </article>
+        <article class="card">
+          <p class="meta">Analysis</p>
+          <h3>Fluids and structures</h3>
+          <p>Fluid mechanics, finite element analysis, system dynamics, and clear technical reporting.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">&copy; 2026 Matthew Heering</footer>
 </body>
 </html>
