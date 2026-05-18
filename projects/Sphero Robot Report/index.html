@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sphero Robot Report | Matthew Heering</title>
+  <meta name="description" content="Sphero robot system dynamics project by Matthew Heering, using ODEs, transfer functions, block diagrams, and bode plots.">
+  <title>Sphero Robot Model | Matthew Heering</title>
   <link rel="stylesheet" href="../../assets/css/main.css">
 </head>
 <body>
@@ -23,18 +24,41 @@
   <main class="page-shell">
     <article class="prose">
       <p class="eyebrow">System dynamics</p>
-      <h1>Sphero Robot Report</h1>
+      <h1>Sphero Robot Model</h1>
       <img class="project-hero-image" src="../../images/Sphero.png" alt="Sphero robot">
       <p>
-        For my System Dynamics class, my group chose to dissect and analyze a Sphero robot.
-        We derived the ODEs that define the dynamics of the system, then used them to develop
-        transfer functions, block diagrams, and bode plots.
+        For System Dynamics, my group selected a Sphero robot as a compact electromechanical
+        system to model. We derived the governing ODEs, converted them into transfer functions,
+        and used block diagrams and bode plots to describe the system response.
       </p>
-      <p><strong>Technologies used:</strong> MATLAB</p>
+      <p>
+        The project was useful because it forced the physical robot to become an analytical model:
+        assumptions had to be explicit, variables had to connect to motion, and the final plots had
+        to explain behavior rather than stand alone.
+      </p>
+      <p><strong>Technologies used:</strong> MATLAB, system dynamics, transfer functions, bode plots</p>
       <div class="action-row">
-        <a class="button primary" href="MAE3260 Spherologists Final Groupwork Report.pdf" target="_blank" rel="noreferrer">View Report</a>
+        <a class="button primary" href="MAE3260 Spherologists Final Groupwork Report.pdf" target="_blank" rel="noreferrer">Open Report</a>
         <a class="button" href="../index.html">Back to Projects</a>
       </div>
+
+      <section class="section grid" aria-label="Project focus areas">
+        <article class="card">
+          <p class="meta">Modeling</p>
+          <h3>Derived system equations</h3>
+          <p>Translated robot motion into ODEs that captured the dominant dynamics.</p>
+        </article>
+        <article class="card">
+          <p class="meta">Analysis</p>
+          <h3>Built transfer functions</h3>
+          <p>Moved from time-domain equations into control-oriented system representations.</p>
+        </article>
+        <article class="card">
+          <p class="meta">Interpretation</p>
+          <h3>Explained response behavior</h3>
+          <p>Used block diagrams and bode plots to make the system response readable.</p>
+        </article>
+      </section>
     </article>
   </main>
 

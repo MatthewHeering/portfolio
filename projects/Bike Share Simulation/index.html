@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bike share frame redesign project by Matthew Heering, using Ansys FEA, shell modeling, and parametric optimization.">
   <title>Bike Share Frame Redesign | Matthew Heering</title>
   <link rel="stylesheet" href="../../assets/css/main.css">
 </head>
@@ -26,42 +27,43 @@
       <h1>Bike Share Frame Redesign</h1>
       <img class="project-hero-image" src="BikeFrame.png" alt="Bike frame finite element analysis model">
       <p>
-        This project used Ansys finite element analysis to evaluate an aluminum bike frame and
-        redesign it for bike share usability. I removed the top tube and reshaped the down tube
-        into a lower step-through geometry so riders could mount the bike more easily.
+        This project began with a broader design question: how can a bike frame become more
+        accessible for bike share use without losing structural credibility? I evaluated a baseline
+        6061 aluminum frame in Ansys, then redesigned the geometry into a step-through frame that
+        is easier to mount.
       </p>
       <p>
-        The original 6061 aluminum frame had a maximum deformation of 0.112 mm and a maximum
-        equivalent stress of 42.38 MPa, giving a factor of safety of 6.12. The redesigned frame
-        improved usability but raised maximum deflection to 1.12 mm and stress to 136.29 MPa,
-        with an initial minimum factor of safety of 1.902.
+        The baseline model had a maximum deformation of 0.112 mm and a maximum equivalent stress
+        of 42.38 MPa, producing a factor of safety of 6.12. The new geometry improved usability
+        but increased deflection to 1.12 mm and stress to 136.29 MPa, with an initial factor of
+        safety of 1.902.
       </p>
       <p>
-        To bring the design back above the safety target, I performed parametric optimization
-        around the bottom bracket shell. Increasing the local tube thickness to 4 mm raised the
-        minimum factor of safety above 2, and direct FEA verified the response surface prediction.
+        I used parametric optimization around the bottom bracket shell to recover safety margin
+        with a focused design change. Increasing the local tube thickness to 4 mm raised the
+        factor of safety above 2, and a direct FEA solve verified the response surface prediction.
       </p>
-      <p><strong>Technologies used:</strong> Ansys, finite element analysis, shell modeling, parametric optimization</p>
+      <p><strong>Technologies used:</strong> Ansys, FEA, shell modeling, mesh convergence, parametric optimization</p>
       <div class="action-row">
         <a class="button primary" href="Bike Frame Project.pdf" target="_blank" rel="noreferrer">Open Report</a>
         <a class="button" href="../index.html">Back to Projects</a>
       </div>
 
-      <section class="section grid" aria-label="Key project results">
+      <section class="section grid" aria-label="Key project outcomes">
         <article class="card">
-          <p class="meta">Original frame</p>
+          <p class="meta">Baseline</p>
           <h3>6.12 factor of safety</h3>
-          <p>Baseline model stayed well below yield with 0.112 mm maximum deformation.</p>
+          <p>The original frame stayed well below yield with only 0.112 mm maximum deformation.</p>
         </article>
         <article class="card">
           <p class="meta">Redesign</p>
-          <h3>Step-through geometry</h3>
-          <p>Removed the top tube and flattened the down tube to make the bike easier to mount.</p>
+          <h3>Step-through frame</h3>
+          <p>Removing the top tube improved accessibility but exposed higher stresses near the bottom bracket.</p>
         </article>
         <article class="card">
           <p class="meta">Optimization</p>
-          <h3>4 mm tube thickness</h3>
-          <p>Parametric optimization raised the bottom bracket region above the safety target.</p>
+          <h3>4 mm thickness</h3>
+          <p>A targeted tube-thickness change brought the minimum factor of safety back above the design target.</p>
         </article>
       </section>
 

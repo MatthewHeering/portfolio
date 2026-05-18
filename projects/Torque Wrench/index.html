@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Torque wrench design project by Matthew Heering, combining CAD, material selection, FEA, and strain gauge analysis.">
   <title>Torque Wrench Design | Matthew Heering</title>
   <link rel="stylesheet" href="../../assets/css/main.css">
 </head>
@@ -23,49 +24,87 @@
   <main class="page-shell">
     <article class="prose">
       <p class="eyebrow">Mechanical design</p>
-      <h1>MAE 3270 Torque Wrench Design Project</h1>
+      <h1>Torque Wrench Design Project</h1>
       <img class="project-hero-image" src="../../images/3270-img.png" alt="Torque wrench design project">
       <p>
-        For Mechanics of Materials, we designed, CADed, and analyzed a torque wrench.
-        The project combined material selection, finite element modeling, strain gauge sensitivity,
-        and technical reporting.
+        For Mechanics of Materials, my team designed and analyzed a torque wrench, moving from
+        CAD geometry to material selection, FEA setup, stress and strain interpretation, and strain
+        gauge sensitivity calculations.
       </p>
-      <p><strong>Technologies used:</strong> Ansys, Fusion 360, MATLAB</p>
+      <p>
+        The project emphasized the full analysis chain: define loads and constraints, choose an
+        appropriate material, evaluate deformation and stress, then connect the numerical results
+        to a measurement strategy.
+      </p>
+      <p><strong>Technologies used:</strong> Ansys, Fusion 360, MATLAB, FEA, strain gauge analysis</p>
       <div class="action-row">
-        <a class="button primary" href="MAE3270 Final Project.pdf" target="_blank" rel="noreferrer">View Full Report</a>
+        <a class="button primary" href="MAE3270 Final Project.pdf" target="_blank" rel="noreferrer">Open Report</a>
         <a class="button" href="../index.html">Back to Projects</a>
       </div>
 
+      <section class="section grid" aria-label="Key project results">
+        <article class="card">
+          <p class="meta">Material</p>
+          <h3>300M steel selection</h3>
+          <p>Used a high-strength alloy to support the required load case and performance target.</p>
+        </article>
+        <article class="card">
+          <p class="meta">FEA result</p>
+          <h3>63,935 psi max stress</h3>
+          <p>Interpreted stress contours, deformation, and strain to evaluate the design response.</p>
+        </article>
+        <article class="card">
+          <p class="meta">Measurement</p>
+          <h3>1.16 mV/V sensitivity</h3>
+          <p>Connected strain results to a strain gauge approach at 600 in-lbf.</p>
+        </article>
+      </section>
+
       <section class="section image-stack" aria-labelledby="results-heading">
-        <h2 id="results-heading">Selected Results</h2>
-        <h3>CAD Model</h3>
-        <img src="../../images/3270 images/CAD drawing.png" alt="Torque wrench CAD drawing">
+        <h2 id="results-heading">Selected Analysis Outputs</h2>
 
-        <h3>Material Properties</h3>
-        <p>300M is a high-strength alloy used in aerospace applications.</p>
-        <img src="../../images/3270 images/3270.21.png" alt="Material properties result 1">
-        <img src="../../images/3270 images/3270.22.png" alt="Material properties result 2">
+        <div class="result-block">
+          <h3>CAD model</h3>
+          <img src="../../images/3270 images/CAD drawing.png" alt="Torque wrench CAD drawing">
+        </div>
 
-        <h3>FEM Setup</h3>
-        <img src="../../images/3270 images/3270.3.png" alt="Finite element model setup">
+        <div class="result-block">
+          <h3>Material properties</h3>
+          <p>300M steel was selected as a high-strength material candidate for the load case.</p>
+          <img src="../../images/3270 images/3270.21.png" alt="Material properties result 1">
+          <img src="../../images/3270 images/3270.22.png" alt="Material properties result 2">
+        </div>
 
-        <h3>Strain Contours</h3>
-        <img src="../../images/3270 images/3270.41.png" alt="Strain contour result 1">
-        <img src="../../images/3270 images/3270.42.png" alt="Strain contour result 2">
+        <div class="result-block">
+          <h3>Finite element setup</h3>
+          <img src="../../images/3270 images/3270.3.png" alt="Finite element model setup">
+        </div>
 
-        <h3>Stress Contours</h3>
-        <img src="../../images/3270 images/3270.51.png" alt="Stress contour result 1">
-        <img src="../../images/3270 images/3270.52.png" alt="Stress contour result 2">
+        <div class="result-block">
+          <h3>Strain contours</h3>
+          <img src="../../images/3270 images/3270.41.png" alt="Strain contour result 1">
+          <img src="../../images/3270 images/3270.42.png" alt="Strain contour result 2">
+        </div>
 
-        <h3>Performance Results</h3>
-        <p>Maximum stress: 63,935 psi. Deflection: 0.20277 in. Strain: 1161 microstrain.</p>
-        <img src="../../images/3270 images/3270.61.png" alt="Maximum stress result">
-        <img src="../../images/3270 images/3270.62.png" alt="Deflection result">
-        <img src="../../images/3270 images/3270.63.png" alt="Strain result">
+        <div class="result-block">
+          <h3>Stress contours</h3>
+          <img src="../../images/3270 images/3270.51.png" alt="Stress contour result 1">
+          <img src="../../images/3270 images/3270.52.png" alt="Stress contour result 2">
+        </div>
 
-        <h3>Strain Gauge</h3>
-        <p>Sensitivity: 1.16 mV/V at 600 in-lbf.</p>
-        <img src="../../images/3270 images/3270.8.png" alt="Strain gauge result">
+        <div class="result-block">
+          <h3>Performance results</h3>
+          <p>Maximum stress: 63,935 psi. Deflection: 0.20277 in. Strain: 1161 microstrain.</p>
+          <img src="../../images/3270 images/3270.61.png" alt="Maximum stress result">
+          <img src="../../images/3270 images/3270.62.png" alt="Deflection result">
+          <img src="../../images/3270 images/3270.63.png" alt="Strain result">
+        </div>
+
+        <div class="result-block">
+          <h3>Strain gauge sensitivity</h3>
+          <p>Calculated sensitivity: 1.16 mV/V at 600 in-lbf.</p>
+          <img src="../../images/3270 images/3270.8.png" alt="Strain gauge result">
+        </div>
       </section>
     </article>
   </main>
