@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bike Share Simulation | Matthew Heering</title>
+  <title>Bike Share Frame Redesign | Matthew Heering</title>
   <link rel="stylesheet" href="../../assets/css/main.css">
 </head>
 <body>
@@ -22,21 +22,52 @@
 
   <main class="page-shell">
     <article class="prose">
-      <p class="eyebrow">Simulation</p>
-      <h1>Bike Share Simulation</h1>
+      <p class="eyebrow">FEA and design</p>
+      <h1>Bike Share Frame Redesign</h1>
+      <img class="project-hero-image" src="BikeFrame.png" alt="Bike frame finite element analysis model">
       <p>
-        This project explores a bike share system through simulation and technical reporting.
-        The full report is embedded below so the analysis can be read directly from the portfolio.
+        This project used Ansys finite element analysis to evaluate an aluminum bike frame and
+        redesign it for bike share usability. I removed the top tube and reshaped the down tube
+        into a lower step-through geometry so riders could mount the bike more easily.
       </p>
-      <p><strong>Report:</strong> Bike Frame Project.pdf</p>
+      <p>
+        The original 6061 aluminum frame had a maximum deformation of 0.112 mm and a maximum
+        equivalent stress of 42.38 MPa, giving a factor of safety of 6.12. The redesigned frame
+        improved usability but raised maximum deflection to 1.12 mm and stress to 136.29 MPa,
+        with an initial minimum factor of safety of 1.902.
+      </p>
+      <p>
+        To bring the design back above the safety target, I performed parametric optimization
+        around the bottom bracket shell. Increasing the local tube thickness to 4 mm raised the
+        minimum factor of safety above 2, and direct FEA verified the response surface prediction.
+      </p>
+      <p><strong>Technologies used:</strong> Ansys, finite element analysis, shell modeling, parametric optimization</p>
       <div class="action-row">
         <a class="button primary" href="Bike Frame Project.pdf" target="_blank" rel="noreferrer">Open Report</a>
         <a class="button" href="../index.html">Back to Projects</a>
       </div>
 
+      <section class="section grid" aria-label="Key project results">
+        <article class="card">
+          <p class="meta">Original frame</p>
+          <h3>6.12 factor of safety</h3>
+          <p>Baseline model stayed well below yield with 0.112 mm maximum deformation.</p>
+        </article>
+        <article class="card">
+          <p class="meta">Redesign</p>
+          <h3>Step-through geometry</h3>
+          <p>Removed the top tube and flattened the down tube to make the bike easier to mount.</p>
+        </article>
+        <article class="card">
+          <p class="meta">Optimization</p>
+          <h3>4 mm tube thickness</h3>
+          <p>Parametric optimization raised the bottom bracket region above the safety target.</p>
+        </article>
+      </section>
+
       <section class="section" aria-labelledby="report-heading">
         <h2 id="report-heading">Project Report</h2>
-        <iframe class="pdf-frame" src="Bike Frame Project.pdf" title="Bike Share Simulation report"></iframe>
+        <iframe class="pdf-frame" src="Bike Frame Project.pdf" title="Bike Share Frame Redesign report"></iframe>
       </section>
     </article>
   </main>
