@@ -511,6 +511,56 @@ p {
   margin-top: 8px;
 }
 
+.analysis-hero {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin: 36px 0 48px;
+}
+
+.analysis-hero img {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.report-actions {
+  justify-content: center;
+  margin: 28px 0 20px;
+}
+
+.analysis-pdf {
+  display: block;
+  margin-top: 18px;
+}
+
+.report-viewer {
+  max-width: 720px;
+  margin: 0 auto;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.report-viewer summary {
+  padding: 16px 0;
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 0.94rem;
+  font-weight: 650;
+  text-align: center;
+}
+
+.report-viewer[open] {
+  padding-bottom: 18px;
+}
+
+.solar-boat-video {
+  max-width: 420px;
+  max-height: none;
+  aspect-ratio: 9 / 16;
+  margin-top: 36px;
+  background: #111;
+}
+
 .pdf-frame,
 .resume-frame {
   width: 100%;
@@ -578,7 +628,8 @@ p {
   .grid,
   .project-grid,
   .metric-grid,
-  .media-grid {
+  .media-grid,
+  .analysis-hero {
     grid-template-columns: 1fr;
   }
 

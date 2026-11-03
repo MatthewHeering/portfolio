@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ansys turbine modal analysis and pressure vessel structural analysis by Matthew Heering.">
+  <title>Ansys Analyses | Matthew Heering</title>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+</head>
+<body>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a class="brand" href="../../index.html">Matthew Heering</a>
+      <div class="nav-links">
+        <a href="../../index.html">Home</a>
+        <a href="../../about.html">About</a>
+        <a class="active" href="../index.html">Projects</a>
+        <a href="../../Resume/resume.html">Resume</a>
+        <a href="../../interests.html">Interests</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-shell">
+    <article class="prose ansys-page">
+      <header class="case-study-header">
+        <p class="eyebrow">Finite element analysis</p>
+        <h1>Ansys Analyses</h1>
+        <p class="lead">
+          Two simulation studies exploring dynamic and static structural behavior through
+          meshing, boundary conditions, result interpretation, and convergence.
+        </p>
+      </header>
+
+      <div class="analysis-hero" aria-label="Analysis models">
+        <figure class="media-figure">
+          <img src="assets/turbine-mesh.jpg" alt="Finite element mesh of the turbine model">
+          <figcaption>Turbine modal-analysis mesh.</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="assets/pressure-vessel-mesh.jpg" alt="Finite element mesh of the pressure vessel model">
+          <figcaption>Pressure-vessel structural mesh.</figcaption>
+        </figure>
+      </div>
+
+      <section class="case-study-section" aria-labelledby="turbine-heading">
+        <div class="case-study-intro">
+          <p class="meta">Modal analysis</p>
+          <h2 id="turbine-heading">Rotating turbine</h2>
+          <p>
+            I modeled a turbine with 14,998 nodes and interpreted its mode shapes and harmonic
+            indices. For the same mode, rotational prestress increased the natural frequency from
+            1085.3 Hz to 1098.7 Hz, consistent with the expected stiffening effect of rotation.
+          </p>
+        </div>
+
+        <div class="metric-grid" aria-label="Turbine analysis results">
+          <div class="metric"><strong>44,994</strong><span>degrees of freedom</span></div>
+          <div class="metric"><strong>1085.3 Hz</strong><span>without rotation</span></div>
+          <div class="metric"><strong>1098.7 Hz</strong><span>with rotational prestress</span></div>
+        </div>
+
+        <div class="action-row report-actions">
+          <a class="button primary" href="reports/turbine-modal-analysis.pdf" target="_blank" rel="noreferrer">Open Turbine Report</a>
+        </div>
+        <details class="report-viewer">
+          <summary>View report inline</summary>
+          <iframe class="pdf-frame analysis-pdf" src="reports/turbine-modal-analysis.pdf" title="Turbine modal analysis report" loading="lazy"></iframe>
+        </details>
+      </section>
+
+      <section class="case-study-section" aria-labelledby="vessel-heading">
+        <div class="case-study-intro">
+          <p class="meta">Static structural analysis</p>
+          <h2 id="vessel-heading">Pressure vessel</h2>
+          <p>
+            I modeled the support constraints, a 75 lbm point mass representing the valve system,
+            gravity, and internal pressure. The study compared deformation and von Mises stress,
+            checked the support reaction for equilibrium, and evaluated mesh convergence. Total
+            deformation converged more consistently than equivalent stress, which was more
+            sensitive to mesh refinement.
+          </p>
+        </div>
+
+        <div class="metric-grid" aria-label="Pressure vessel analysis results">
+          <div class="metric"><strong>41,877</strong><span>degrees of freedom</span></div>
+          <div class="metric"><strong>75 lbm</strong><span>valve-system point mass</span></div>
+          <div class="metric"><strong>~715 lbf</strong><span>gravity-only support reaction</span></div>
+        </div>
+
+        <div class="action-row report-actions">
+          <a class="button primary" href="reports/pressure-vessel-analysis.pdf" target="_blank" rel="noreferrer">Open Pressure Vessel Report</a>
+        </div>
+        <details class="report-viewer">
+          <summary>View report inline</summary>
+          <iframe class="pdf-frame analysis-pdf" src="reports/pressure-vessel-analysis.pdf" title="Pressure vessel structural analysis report" loading="lazy"></iframe>
+        </details>
+      </section>
+
+      <div class="action-row case-study-actions">
+        <a class="button" href="../index.html">Back to Projects</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">&copy; 2026 Matthew Heering</footer>
+</body>
+</html>
