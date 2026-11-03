@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Beanstalk Farms manufacturing and automation work by Matthew Heering, including waste analysis, harvest guides, conveyor design, and the Terra lid-cleaning system.">
+  <title>Beanstalk Farms | Matthew Heering</title>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+</head>
+<body>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a class="brand" href="../../index.html">Matthew Heering</a>
+      <div class="nav-links">
+        <a href="../../index.html">Home</a>
+        <a href="../../about.html">About</a>
+        <a class="active" href="../index.html">Projects</a>
+        <a href="../../Resume/resume.html">Resume</a>
+        <a href="../../interests.html">Interests</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-shell">
+    <article class="prose beanstalk-case-study">
+      <header class="case-study-header">
+        <p class="eyebrow">Manufacturing and automation</p>
+        <h1>Beanstalk Farms</h1>
+        <p class="lead">
+          My work at Beanstalk Farms focused on reducing harvest waste, improving material flow,
+          and automating repetitive packaging tasks through process analysis and mechanical design.
+        </p>
+        <img class="project-hero-image project-hero-crop" src="assets/facility-overview.jpg" alt="Vertical growing racks and harvesting equipment at Beanstalk Farms">
+      </header>
+
+      <section class="case-study-section" aria-labelledby="problem-heading">
+        <div class="case-study-intro">
+          <p class="meta">Problem</p>
+          <h2 id="problem-heading">Spinach loss during harvesting</h2>
+          <p>
+            Spinach was being lost outside the collection path or bent beneath the harvester
+            blades. I measured three samples to estimate the daily and weekly impact of the lost yield.
+          </p>
+        </div>
+
+        <figure class="media-figure wide">
+          <img src="assets/spinach-loss-analysis.png" alt="Annotated photos showing lost spinach yield and leaves bent beneath harvester blades">
+          <figcaption>Lost yield and spinach bent beneath the harvester blades.</figcaption>
+        </figure>
+
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr class="table-title"><th colspan="8"><em>Waste Analysis &amp; Cost Impact Report</em></th></tr>
+              <tr>
+                <th>Sample #</th>
+                <th>Weight<br>(oz, 5 PCs)</th>
+                <th>Avg Weight<br>Per PC (oz)</th>
+                <th>Per Day<br>Waste (lbs)</th>
+                <th>Clamshells<br>Per Day</th>
+                <th>Money<br>Wasted / Day</th>
+                <th>Money<br>Wasted / Week</th>
+                <th>Fudge Factor (~25%)<br>Weekly Expense</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>30.05</td><td>6.01</td><td>247.91</td><td>1,133.3</td><td>$1,756.62</td><td>$8,783.12</td><td>$6,587.34</td></tr>
+              <tr><td>2</td><td>26.55</td><td>5.31</td><td>219.04</td><td>1,001.3</td><td>$1,552.03</td><td>$7,760.13</td><td>$5,820.10</td></tr>
+              <tr><td>3</td><td>26.60</td><td>5.32</td><td>219.45</td><td>1,003.2</td><td>$1,554.95</td><td>$7,774.74</td><td>$5,831.06</td></tr>
+              <tr class="summary-row"><td>TOTAL / AVG</td><td>83.20</td><td>5.55</td><td>228.80</td><td>1,045.9</td><td>$1,621.20</td><td>$8,106.00</td><td>$6,079.50</td></tr>
+              <tr class="table-section"><th colspan="8">KEY INSIGHTS</th></tr>
+              <tr class="summary-row"><td colspan="6">Daily Money Wasted (Avg)</td><td>$1,621.20</td><td></td></tr>
+              <tr class="summary-row"><td colspan="6">Weekly Money Wasted (Avg)</td><td>$8,106.00</td><td></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="case-study-section" aria-labelledby="solution-heading">
+        <div class="case-study-intro">
+          <p class="meta">Solution</p>
+          <h2 id="solution-heading">Spinach guide</h2>
+          <p>
+            I designed guides to direct the crop into the collection path and reduce the amount
+            of spinach bending beneath the harvester blades.
+          </p>
+        </div>
+        <div class="media-grid">
+          <figure class="media-figure">
+            <img src="assets/spinach-guide-front.png" alt="CAD model of the spinach guide concept">
+            <figcaption>Spinach guide CAD concept.</figcaption>
+          </figure>
+          <figure class="media-figure">
+            <img src="assets/spinach-guide-side.png" alt="Alternate CAD view of the spinach guide concept">
+            <figcaption>Spinach guide CAD, alternate view.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-study-section" aria-labelledby="additional-heading">
+        <div class="case-study-intro">
+          <p class="meta">Additional projects</p>
+          <h2 id="additional-heading">Harvester conveyor</h2>
+          <p>
+            The existing conveyor under the harvester allowed only the lid to pass through, so the
+            lid and basin had to be separated manually. I designed a conveyor that lets both travel
+            together, reducing handling and increasing throughput.
+          </p>
+        </div>
+        <div class="media-grid">
+          <figure class="media-figure">
+            <img src="assets/harvester-conveyor-cad.png" alt="Harvester Crayola CAD model">
+            <figcaption>Harvester Crayola CAD.</figcaption>
+          </figure>
+          <figure class="media-figure">
+            <img src="assets/flow-rail-conveyor.png" alt="CAD model of the flow-rail conveyor assembly">
+            <figcaption>Flow-rail conveyor assembly.</figcaption>
+          </figure>
+          <figure class="media-figure wide">
+            <img src="assets/lid-basin-profile.png" alt="NDA-safe CAD view of the lid and basin">
+            <figcaption>NDA-safe lid and basin.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-study-section" aria-labelledby="terra-heading">
+        <div class="case-study-intro">
+          <p class="meta">Additional project</p>
+          <h2 id="terra-heading">Terra machine</h2>
+          <p>
+            Terra cleans lids for reuse, replacing a tedious manual cleaning process.
+          </p>
+        </div>
+
+        <figure class="media-figure terra-prototype-figure">
+          <img src="assets/terra-prototype.jpg" alt="Wooden prototype of the Terra lid-cleaning machine">
+          <figcaption>Wooden Terra prototype.</figcaption>
+        </figure>
+
+        <figure class="media-figure wide terra-figure">
+          <img src="assets/terra-development.png" alt="Terra lid-cleaning machine during fabrication and after completion">
+          <figcaption>Terra during fabrication and after completion.</figcaption>
+        </figure>
+        <video class="project-video" controls preload="metadata" poster="assets/terra-development.png">
+          <source src="assets/terra-demo.mov">
+          Your browser cannot play this video. <a href="assets/terra-demo.mov">Open the Terra demonstration video</a> instead.
+        </video>
+        <p class="video-caption">Terra operating demonstration. If playback is unavailable, <a href="assets/terra-demo.mov">open the original video</a>.</p>
+      </section>
+
+      <div class="action-row case-study-actions">
+        <a class="button" href="../index.html">Back to Projects</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">&copy; 2026 Matthew Heering</footer>
+</body>
+</html>
